@@ -1,0 +1,24 @@
+// ======NULL STYLES=====
+@import '..//scss/null';
+
+// =====ЗАГАЛЬНІ STYLES=====
+@import '..//scss/common';
+
+//=====HEADER=====';
+@import '../scss/header';
+
+// ===== MAIN=====
+
+.page-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  // Притискаємо footer
+  main {
+    flex-grow: 1;
+  }
+}
+
+// =====FOOTER=====
+@import '../scss/footer';
