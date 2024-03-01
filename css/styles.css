@@ -74,6 +74,15 @@ button:active {
   outline: none;
 }
 
+body {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
 .page-container {
   min-height: 100vh;
   display: flex;
@@ -81,5 +90,124 @@ button:active {
   overflow: hidden;
 }
 .page-container main {
-  flex-grow: 1;
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header {
+  position: fixed;
+  top: 26px;
+  width: 100%;
+  max-height: 72px;
+  height: 100%;
+  background: linear-gradient(98.75deg, rgba(0, 197, 235, 0.3) -1.974%, rgba(181, 68, 254, 0.3) 89.434%);
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: block;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.header-menu-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header-menu-item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.header-menu-link {
+  display: block;
+  padding-top: 29px;
+  padding-bottom: 28px;
+}
+
+.hero {
+  max-height: 684px;
+  height: 100%;
+  background: #06071b;
+}
+.hero .container {
+  position: relative;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  padding-top: 243px;
+  margin-bottom: 12px;
+}
+
+.hero-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 28px;
+}
+
+.hero-list {
+  margin-bottom: 60px;
+}
+
+.hero-list-item {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 119%;
+}
+
+.hero-list-item + .hero-list-item {
+  margin-top: 12px;
+}
+
+.hero-button {
+  max-width: 200px;
+  max-height: 42px;
+  padding: 12px 60px;
+  margin-bottom: 146px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 119%;
+  border-radius: 5px;
+  background: linear-gradient(98.75deg, rgb(0, 197, 235) -1.739%, rgb(181, 68, 254) 89.191%);
+}
+
+.hero-img-decor {
+  position: absolute;
+  left: 324px;
+  top: 227px;
+}
+
+.hero-img-mobila {
+  position: absolute;
+  right: -30px;
+  top: 110px;
+}
+
+.druga {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: grey;
 }

@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 26px;
+  width: 100%;
+  max-height: 72px;
+  height: 100%;
+  background: linear-gradient(
+    98.75deg,
+    rgba(0, 197, 235, 0.3) -1.974%,
+    rgba(181, 68, 254, 0.3) 89.434%
+  );
+
+  backdrop-filter: blur(35px);
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header-logo {
+  display: block;
+
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.header-menu {
+}
+
+.header-menu-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header-menu-item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.header-menu-link {
+  display: block;
+  padding-top: 29px;
+  padding-bottom: 28px;
+}

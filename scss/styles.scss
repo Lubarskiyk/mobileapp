@@ -1,24 +1,56 @@
 // ======NULL STYLES=====
 @import '..//scss/null';
 
+// =====ЗМІННІ=====
+// Мінімальна ширина сторінки
+$minWidth: 320px;
+// Ширина полотна (макету)
+$maxWidth: 1280px;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1248px;
+// Загальний відступ у контейнера
+// (15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 16px;
+
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding * 2;
+
 // =====ЗАГАЛЬНІ STYLES=====
 @import '..//scss/common';
-
-//=====HEADER=====';
-@import '../scss/header';
-
-// ===== MAIN=====
-
+body {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color: #fff;
+}
 .page-container {
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   // Притискаємо footer
   main {
-    flex-grow: 1;
+    flex: 1 1 auto;
   }
 }
 
+.container {
+  max-width: $containerWidth;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $containerPadding;
+  padding-right: $containerPadding;
+}
+
+//=====HEADER=====';
+@import '../scss/header';
+
+// ===== MAIN=====
+@import '../scss/hero';
+.druga {
+  background-color: #fff;
+}
 // =====FOOTER=====
 @import '../scss/footer';
