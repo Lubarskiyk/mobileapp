@@ -16,7 +16,7 @@ $containerPadding: 16px;
 $containerWidth: $maxWidthContainer + $containerPadding * 2;
 
 // =====ЗАГАЛЬНІ STYLES=====
-@import '..//scss/common';
+@import '../scss/common';
 body {
   font-family: Inter;
   font-size: 16px;
@@ -25,32 +25,12 @@ body {
   letter-spacing: 0em;
   color: #fff;
 }
-.page-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  // Притискаємо footer
-  main {
-    flex: 1 1 auto;
-  }
-}
-
-.container {
-  max-width: $containerWidth;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: $containerPadding;
-  padding-right: $containerPadding;
-}
 
 //=====HEADER=====';
 @import '../scss/header';
 
 // ===== MAIN=====
 @import '../scss/hero';
-.druga {
-  background-color: #fff;
-}
+@import '../scss/features';
 // =====FOOTER=====
 @import '../scss/footer';

@@ -1,1 +1,27 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  // Притискаємо footer
+  main {
+    flex: 1 1 auto;
+  }
+}
+
+.container {
+  max-width: $containerWidth;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $containerPadding;
+  padding-right: $containerPadding;
+}
+
+.headline2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  line-height: 120%;
+  text-transform: uppercase;
+}
