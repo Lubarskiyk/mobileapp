@@ -18,10 +18,36 @@
   padding-right: $containerPadding;
 }
 
+body {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.headline1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
 .headline2 {
   font-weight: 700;
   font-size: 24px;
-  color: #000;
   line-height: 120%;
   text-transform: uppercase;
+}
+
+.headline3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 122%;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 171%;
 }
