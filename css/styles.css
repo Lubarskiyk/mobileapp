@@ -125,6 +125,16 @@ body {
   line-height: 171%;
 }
 
+.icon-stile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(98.75deg, rgb(0, 197, 235) 3.032%, rgb(181, 68, 254) 84.251%);
+}
+
 .header {
   position: fixed;
   z-index: 50;
@@ -311,16 +321,6 @@ body {
   gap: 20px;
 }
 
-.aboutus-market-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(98.75deg, rgb(0, 197, 235) 3.032%, rgb(181, 68, 254) 84.251%);
-}
-
 .aboutus-market-icon {
   width: 32px;
   height: 36px;
@@ -396,8 +396,6 @@ body {
 
 .review {
   color: #000;
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 .review .container {
   position: relative;
@@ -430,47 +428,86 @@ body {
 }
 
 .swiper {
+  position: relative;
   width: 100%;
   height: 100%;
 }
 
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url(../images/review/blok.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .swiper-slide {
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.autoplay-progress {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  z-index: 10;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: var(--swiper-theme-color);
+.contact {
+  background-color: #06071b;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #fff;
 }
 
-.autoplay-progress svg {
-  --progress: 0;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  stroke-width: 4px;
-  stroke: var(--swiper-theme-color);
-  fill: none;
-  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
-  stroke-dasharray: 125.6;
-  transform: rotate(-90deg);
+.contact-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact-content {
+  display: flex;
+}
+
+.contact-text {
+  min-width: 50%;
+}
+
+.contact-text-title {
+  margin-bottom: 20px;
+}
+
+.contact-text-text {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.contact-social {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-social-items .icon-stile {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-social-icon {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.contact-contact {
+  display: block;
+}
+
+.contact-comment {
+  padding-left: 16px;
 }
 
 .footer {
-  background-color: grey;
+  background-color: #06071b;
 }
